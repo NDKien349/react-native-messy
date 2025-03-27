@@ -6,6 +6,7 @@ import {
 } from './MessyFooter/MessyFooterAction';
 
 import { setMessyFooterInputText } from './MessyFooter/MessyFooter.default';
+import { useMessyListAction } from './modules' 
 
 export type * from './types.d';
 export {
@@ -13,4 +14,5 @@ export {
   MessyFooterActionCameraDefault,
   MessyFooterActionLibraryDefault,
   setMessyFooterInputText,
+  useMessyListAction,
 };
