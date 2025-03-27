@@ -11,15 +11,15 @@ const DefaultColors = {
   success: '#43A047',
   message_left: {
     background: '#EEEEEE',
-    text: '#000',
+    text: '#333333',
     link: '#1976D2',
     email: '#2962FF',
     phone: '#43A047',
     audio: 'rgba(0,0,0,0.2)',
   },
   message_right: {
-    background: '#F85767',
-    text: 'white',
+    background: '#E4E4E4',
+    text: '#333333',
     link: '#1976D2',
     email: '#2962FF',
     phone: '#D32F2F',
