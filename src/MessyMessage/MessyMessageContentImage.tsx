@@ -262,14 +262,14 @@ export function MessyMessageContentImage(props: TMessyMessageProps) {
   const { value } = props;
   const messyProps = useMessyPropsContext();
 
+  if (typeof messyProps.renderMessageImage === 'function') {
+    return messyProps.renderMessageImage({ ...props, ...messyProps });
+  }
   if (!value?.image && !value.local) {
     return null;
   }
   if (value.local && !isImage(value.local?.uri)) {
     return null;
-  }
-  if (typeof messyProps.renderMessageImage === 'function') {
-    return messyProps.renderMessageImage({ ...props, ...messyProps });
   }
   return <MessyMessageContentImageDefault {...props} />;
 }
