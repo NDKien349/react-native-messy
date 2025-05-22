@@ -49,11 +49,14 @@ export function Messy(props: TMessyProps) {
           scrollsToTop={false}
           data={[...messages]}
           renderItem={({ item, index }: TListComponentItem) => {
+            const afterMessageIndex = index + 1;
+            const afterMessage = messages.length > afterMessageIndex ? messages[afterMessageIndex] : undefined;
             return (
               <MessyMessage
                 value={item}
                 index={index}
                 preMessage={messages[index - 1]}
+                afterMessage={afterMessage}
               />
             );
           }}

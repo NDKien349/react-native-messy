@@ -123,6 +123,7 @@ export type TMessyMessageProps = Readonly<{
   value: TMessyMessage;
   preMessage?: TMessyMessage;
   index: number;
+  afterMessage?: TMessyMessage;
 }>;
 
 export type TUser = {
