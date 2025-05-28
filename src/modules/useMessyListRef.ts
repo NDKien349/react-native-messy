@@ -22,6 +22,7 @@ export const useMessyListAction = () => {
     }, 300);
   };
   return {
+    ref: listRef,
     scrollToLast,
   };
 };
